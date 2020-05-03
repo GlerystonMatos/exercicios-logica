@@ -22,9 +22,7 @@ namespace Desafios
             double areaBanheiro = (3.14 * Math.Pow(((l / 2) / 2), 2));
             double areaEscritorio = ((l * l) / 2);
             double areaSalas = ((4 * l) * (2 * l));
-            double areaCopaCozinha01 = (l * (l * 0.7));
-            double areaCopaCozinha02 = (((l / 2) * (l * 0.7)) / 2);
-            double areaCopaCozinha = (areaCopaCozinha01 + (2 * areaCopaCozinha02));
+            double areaCopaCozinha = ((((2 * l) + l) / 2) * (l * 0.7));
             double areaCasa = ((4 * areaBanheiro) + (4 * areaQuarto) + areaEscritorio + areaSalas + areaCopaCozinha);
             double valorPedreiroCasa = (valorPorMetroQuadrado * areaCasa);
             double valorPedreiroCondominio = (valorPedreiroCasa * 40);
