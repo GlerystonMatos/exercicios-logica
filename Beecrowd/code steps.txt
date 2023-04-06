@@ -1,0 +1,8 @@
+Create new project:
+dotnet new console --framework net7.0
+
+Running in terminal:
+dotnet run
+
+Running in terminal with external input:
+dotnet run < ./input/case.txt
