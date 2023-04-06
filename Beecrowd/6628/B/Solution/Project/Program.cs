@@ -15,7 +15,8 @@
                     saida += letra;
 
                 remover = !remover;
-            } else
+            }
+            else
             {
                 saida += letra;
             }

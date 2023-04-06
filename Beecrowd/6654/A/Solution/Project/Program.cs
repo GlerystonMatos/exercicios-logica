@@ -11,20 +11,25 @@
             valor++;
         }
 
-        int quantidadeCasosTeste = int.Parse(Console.ReadLine());
+        int quantidadeCasosTeste = 0;
+        int.TryParse(Console.ReadLine(), out quantidadeCasosTeste);
 
         for (int casoTeste = 0; casoTeste < quantidadeCasosTeste; casoTeste++)
         {
-            int quantidadeLinhas = int.Parse(Console.ReadLine());
-            int valorFinal = 0;
+            int quantidadeLinhas = 0;
+            int.TryParse(Console.ReadLine(), out quantidadeLinhas);
 
+            int valorFinal = 0;
             for (int indiceLinha = 0; indiceLinha < quantidadeLinhas; indiceLinha++)
             {
-                string linha = Console.ReadLine();
+                string? linha = Console.ReadLine();
 
-                for (int indiceLetra = 0; indiceLetra < linha.Length; indiceLetra++)
+                if (!string.IsNullOrEmpty(linha))
                 {
-                    valorFinal += valorAlfabeto[linha[indiceLetra]] + indiceLinha + indiceLetra;
+                    for (int indiceLetra = 0; indiceLetra < linha.Length; indiceLetra++)
+                    {
+                        valorFinal += valorAlfabeto[linha[indiceLetra]] + indiceLinha + indiceLetra;
+                    }
                 }
             }
 
