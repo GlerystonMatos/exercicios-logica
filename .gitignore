@@ -396,9 +396,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Beecrowd
-/Beecrowd/6558/.vscode/launch.json
-/Beecrowd/6558/.vscode/tasks.json
-/Beecrowd/6628/.vscode/launch.json
-/Beecrowd/6628/.vscode/tasks.json
-/Beecrowd/6654/.vscode/launch.json
-/Beecrowd/6654/.vscode/tasks.json
+*.json
